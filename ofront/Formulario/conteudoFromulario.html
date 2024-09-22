@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Conteúdo</title>
+    <link rel="stylesheet" href="conteudoFromulario.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Dinheiro Inteligente</div>
+        <nav class="navegador">
+            <a href="homeColaborador.html">Início</a>
+            <a href="perfilColaborador.html">Perfil</a>
+        </nav>
+    </header>
+
+    <div class="form-container">
+        <h1>Adicionar Conteúdo</h1>
+        <form action="" >
+            <div class="form-group">
+                <label for="oque">O que é:</label>
+                <input type="text" id="oque" name="oque" placeholder="Descreva o que é" required>
+            </div>
+            <div class="form-group">
+                <label for="como_funciona">Como funciona:</label>
+                <textarea id="como_funciona" name="como_funciona" placeholder="Explique como funciona" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exemplo">Exemplo:</label>
+                <textarea id="exemplo" name="exemplo" placeholder="Dê um exemplo" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="vantagens">Vantagens:</label>
+                <textarea id="vantagens" name="vantagens" placeholder="Liste as vantagens" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" onclick="conteudoSubmit(event)">Entrar</button>
+            </div>
+        </form>
+    </div>
+    <script src="conteudoFormulario.js"></script>
+</body>
+</html>
